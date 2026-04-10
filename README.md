@@ -75,34 +75,37 @@ G1-316 introduces a six-layer architecture that solves the adoption trilemma:
 ## Technical Architecture
 
 ```
-
- User Device 
- 
- Biometric Auth (Face ID / Fingerprint) 
- ↓ 
- Secure Enclave / TEE 
- • Shard A (1 of 5 MPC shards) 
- • Hardware-secured voucher tokens 
- • NFC payment protocol 
- 
-
- ↓
-
- Guardian Network (EigenLayer AVS) 
- • Shard C: Institutional Guardian #1 (restaked ETH) 
- • Shard D: Institutional Guardian #2 (restaked ETH) 
- • Distributed Validator Technology for resilience 
-
- ↓
-
- Multi-Chain Settlement Layer 
- Base (Coinbase L2) • Arbitrum • Optimism • Polygon 
- zkSync • Starknet • Scroll 
- ↓ 
- Diamond Proxy Smart Contracts 
- • Compliance Module (swappable by jurisdiction) 
- • Privacy Pool verification 
- • LaunchController (Genesis 1000 cohort system) 
+┌─────────────────────────────────────────────────────────────────┐
+│                          USER DEVICE                            │
+├─────────────────────────────────────────────────────────────────┤
+│  Biometric Auth (Face ID / Fingerprint)                        │
+│  ↓                                                              │
+│  Secure Enclave / TEE                                           │
+│    • Shard A (1 of 5 MPC shards)                               │
+│    • Hardware-secured voucher tokens                           │
+│    • NFC payment protocol                                      │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│               GUARDIAN NETWORK (EigenLayer AVS)                 │
+├─────────────────────────────────────────────────────────────────┤
+│  • Shard C: Institutional Guardian #1 (restaked ETH)           │
+│  • Shard D: Institutional Guardian #2 (restaked ETH)           │
+│  • Distributed Validator Technology for resilience             │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│                  MULTI-CHAIN SETTLEMENT LAYER                   │
+├─────────────────────────────────────────────────────────────────┤
+│  Base (Coinbase L2) • Arbitrum • Optimism • Polygon            │
+│  zkSync • Starknet • Scroll                                    │
+│                                                                 │
+│  Diamond Proxy Smart Contracts:                                │
+│    • Compliance Module (swappable by jurisdiction)             │
+│    • Privacy Pool verification                                 │
+│    • LaunchController (Genesis 1000 cohort system)             │
+└─────────────────────────────────────────────────────────────────┘
+```
 
 ```
 
