@@ -8,6 +8,8 @@
 
 The G1-316 Protocol is a next-generation cryptocurrency wallet architecture designed to eliminate the three fundamental barriers to mass adoption: complex key management, regulatory uncertainty, and poor offline functionality.
 
+---
+
 ## The Problem
 
 Traditional crypto wallets force users to choose between security, usability, and compliance:
@@ -17,41 +19,49 @@ Traditional crypto wallets force users to choose between security, usability, an
 - **Regulatory ambiguity** forces users to choose between privacy and legal compliance
 - **$2-15 gas fees** on L1 make micropayments economically impossible
 
+---
+
 ## The Solution
 
 G1-316 introduces a six-layer architecture that solves the adoption trilemma:
 
-### **Layer 1: Biometric-Gated Identity**
+### Layer 1: Biometric-Gated Identity
+
 - Your face/fingerprint replaces 12-word seed phrases
 - 3-of-5 Shamir Secret Sharing across Guardian network
 - Hardware-secured MPC key management
 - Zero biometric data leaves your device
 
-### **Layer 2: Cross-Chain Transaction Layer**
+### Layer 2: Cross-Chain Transaction Layer
+
 - Unified balance across 7+ L2 networks (Base, Arbitrum, Optimism, Polygon, zkSync, Starknet, Scroll)
 - Intent-based competitive solver auctions for best pricing
 - Account Abstraction (ERC-4337) for gasless transactions
 - Sub-$0.01 transaction costs
 
-### **Layer 3: Offline Payment System**
+### Layer 3: Offline Payment System
+
 - NFC tap-to-pay works **without internet** during disasters
 - Hardware-secured voucher tokens with progressive degradation (7-day offline window)
 - UWB anti-relay protection prevents fraud
 - Dynamic collateralization protects against stablecoin depeg
 
-### **Layer 4: Privacy-Preserving Compliance**
+### Layer 4: Privacy-Preserving Compliance
+
 - Zero-Knowledge KYC: prove compliance without revealing identity
 - Privacy Pools separate compliant users from sanctioned addresses
 - Diamond Proxy pattern for jurisdiction-specific rules
 - Dual-checkpoint system (initiation + settlement verification)
 
-### **Layer 5: Mesh Relay Network**
+### Layer 5: Mesh Relay Network
+
 - Peer-to-peer offline payment routing via trusted intermediaries
 - Reputation-based trust scoring using ZK proofs
 - Incentivized relay fees tier by relationship proximity
 - Network-aware fee pausing during verified outages
 
-### **Layer 6: Security Hardening**
+### Layer 6: Security Hardening
+
 - EigenLayer AVS-secured Guardian nodes with restaking incentives
 - Post-quantum cryptographic agility (lattice-based backup signatures)
 - Supply chain verification via SBOM attestation
@@ -107,13 +117,12 @@ G1-316 introduces a six-layer architecture that solves the adoption trilemma:
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-```
-
 ---
 
 ## Economic Model
 
 **Revenue Streams:**
+
 - **Interchange Fees:** 0.2% on cross-chain swaps (competitive with Visa's 1.5-3%)
 - **Guardian Subscription:** $2/month per user for institutional-grade recovery
 - **Mesh Relay Fees:** Tiered by trust level (0.05% Tier 1 → 0.5% Tier 3)
@@ -121,6 +130,7 @@ G1-316 introduces a six-layer architecture that solves the adoption trilemma:
 **Year 2 Projection:** $18.75M revenue at 500K users
 
 **Why Revenue is Defensible:**
+
 - Network effects (Guardian mesh, relay coverage)
 - Regulatory moat (Privacy Pools, ZK-KYC infrastructure)
 - Technical complexity (6-layer architecture, hardware security)
@@ -129,26 +139,30 @@ G1-316 introduces a six-layer architecture that solves the adoption trilemma:
 
 ## Use Cases
 
-### **Disaster Relief**
+### Disaster Relief
+
 - Hurricane cuts power/internet for 7 days
 - Users continue NFC tap-to-pay at local merchants
 - Progressive degradation limits risk ($250 → $100 → $50 daily limits)
 - Settlements batch-process when connectivity restores
 
-### **Cross-Border Remittances**
+### Cross-Border Remittances
+
 - Send $500 from USA → India
 - User broadcasts intent: "Convert $500 USDC → INR, best rate"
 - Solver network competes (Wintermute, Jump, market makers)
 - Settlement on Base L2: $0.003 gas cost
 - Recipient gets INR stablecoin instantly
 
-### **Privacy-Preserving DeFi**
+### Privacy-Preserving DeFi
+
 - User wants to use Aave without doxxing wallet history
 - Privacy Pool generates ZK proof: "I am NOT sanctioned"
 - Protocol verifies compliance without seeing transaction graph
 - User accesses DeFi with full privacy + legal compliance
 
-### **Micropayments**
+### Micropayments
+
 - Pay $0.50 for article, $2 for bus fare, $5 for coffee
 - Traditional L1: $3-10 gas fee (economically impossible)
 - G1-316: Sub-$0.01 fees via L2 routing + batching
@@ -158,9 +172,10 @@ G1-316 introduces a six-layer architecture that solves the adoption trilemma:
 
 ## Documentation
 
-**Full Technical Whitepaper:** [G1-316_Protocol_Whitepaper.pdf](./G1-316_Protocol_Whitepaper.pdf)
+**Full Technical Whitepaper:** [G1-316_Protocol_Whitepaper.pdf](./G1-316_Protocol__Sovereign_Digital_Finance_-_Google_Docs.pdf)
 
 **Key Sections:**
+
 - **Section 1-2:** Problem statement and adoption trilemma
 - **Section 3:** Six-layer system architecture
 - **Section 4:** Technical implementation details
@@ -179,6 +194,7 @@ G1-316 introduces a six-layer architecture that solves the adoption trilemma:
 ## Technology Stack
 
 **Core Infrastructure:**
+
 - **Smart Contracts:** Solidity (Diamond Proxy, Account Abstraction, Privacy Pools)
 - **L2 Networks:** Base, Arbitrum, Optimism, Polygon, zkSync, Starknet, Scroll
 - **Guardian Network:** EigenLayer AVS (Actively Validated Services)
@@ -187,6 +203,7 @@ G1-316 introduces a six-layer architecture that solves the adoption trilemma:
 - **Offline Protocol:** NFC (ISO 14443), BLE 5.2, UWB (IEEE 802.15.4z)
 
 **Key Dependencies:**
+
 - **MPC:** FROST threshold signatures (3-of-5)
 - **ZK Proofs:** Circom circuits, SnarkJS proving system
 - **Oracle Network:** Chainlink (TWAP aggregation, 30-min windows)
@@ -197,19 +214,22 @@ G1-316 introduces a six-layer architecture that solves the adoption trilemma:
 
 ## Roadmap
 
-### **Phase 1: Genesis 1000 Launch** (Q2 2026)
+### Phase 1: Genesis 1000 Launch (Q2 2026)
+
 - Invite-only cohort system (10 → 100 → 1000 users)
 - Controlled stress testing of Guardian recovery flows
 - Real-world offline payment validation (disaster simulations)
 - Launch Controller smart contract enforces growth caps
 
-### **Phase 2: Public Beta** (Q4 2026)
+### Phase 2: Public Beta (Q4 2026)
+
 - Open registration with KYC verification
 - Expand to 10K users across 5 jurisdictions
 - Enable full cross-chain routing (7 L2 networks)
 - Privacy Pool deployment with compliance oracle network
 
-### **Phase 3: Mass Adoption** (2027+)
+### Phase 3: Mass Adoption (2027+)
+
 - Scale to 500K+ users
 - Integrate with merchant payment processors
 - Fiat on/off ramps via regulated partners
@@ -220,6 +240,7 @@ G1-316 introduces a six-layer architecture that solves the adoption trilemma:
 ## Security Considerations
 
 **Threat Model Coverage:**
+
 - Device loss/theft → Guardian recovery
 - Biometric spoofing → Liveness detection + hardware attestation
 - Supply chain attacks → SBOM verification + TEE remote attestation
@@ -230,6 +251,7 @@ G1-316 introduces a six-layer architecture that solves the adoption trilemma:
 - Oracle manipulation → TWAP + multi-source aggregation (Chainlink)
 
 **Audits:**
+
 - Smart contract audits pending (OpenZeppelin, Trail of Bits recommended)
 - Hardware security review pending (NCC Group recommended)
 - Cryptographic review pending (academic collaboration in progress)
@@ -241,15 +263,18 @@ G1-316 introduces a six-layer architecture that solves the adoption trilemma:
 This whitepaper and protocol design are released under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
 
 **You are free to:**
+
 - **Share** — copy and redistribute the material in any medium or format
 - **Adapt** — remix, transform, and build upon the material for any purpose, even commercially
 
 **Under the following terms:**
+
 - **Attribution** — You must give appropriate credit to the original author, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 
 Full license text: https://creativecommons.org/licenses/by/4.0/
 
 **Note:** This is a technical design specification. Implementation and deployment require:
+
 - Full smart contract audits
 - Hardware security certification
 - Regulatory compliance review per jurisdiction
@@ -273,6 +298,7 @@ This repository contains the protocol specification and whitepaper. We welcome:
 ## Citations & References
 
 **Core Academic Foundations:**
+
 - Shamir, A. (1979). "How to Share a Secret"
 - Buterin, V. et al. (2023). "ERC-4337: Account Abstraction via Entry Point Contract"
 - Buterin, V., Weyl, E.G., et al. (2022). "Privacy Pools"
@@ -280,6 +306,7 @@ This repository contains the protocol specification and whitepaper. We welcome:
 - Groth, J. (2016). "On the Size of Pairing-based Non-interactive Arguments"
 
 **Industry Precedents:**
+
 - Uniswap v3 TWAP oracles
 - Safe (Gnosis Safe) multi-sig architecture
 - Aztec Protocol privacy layer
@@ -299,4 +326,4 @@ Together: A protocol designed to serve the 2.6 billion people who deserve financ
 
 ---
 
-*Designed with love for humanity, engineered with respect for mathematics.* 
+*Designed with love for humanity, engineered with respect for mathematics.*
