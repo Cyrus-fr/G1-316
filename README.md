@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/badge/version-2.1-blue.svg)](https://github.com/yourusername/g1-316-protocol)
 [![Status](https://img.shields.io/badge/status-whitepaper-orange.svg)](https://github.com/yourusername/g1-316-protocol)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-CC%20BY%204.0-green.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 > **Biology > Keys. Laws > Anarchy. Math > Trust.**
 
@@ -235,7 +235,16 @@ G1-316 introduces a six-layer architecture that solves the adoption trilemma:
 
 ## License
 
-This whitepaper and protocol design are released under the **MIT License**.
+This whitepaper and protocol design are released under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
+
+**You are free to:**
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material for any purpose, even commercially
+
+**Under the following terms:**
+- **Attribution** — You must give appropriate credit to the original author, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+Full license text: https://creativecommons.org/licenses/by/4.0/
 
 **Note:** This is a technical design specification. Implementation and deployment require:
 - Full smart contract audits
