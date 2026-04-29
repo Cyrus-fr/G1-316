@@ -172,7 +172,7 @@ G1-316 introduces a six-layer architecture that solves the adoption trilemma:
 
 ## Documentation
 
-**Full Technical Whitepaper:** [G1-316_Protocol_Whitepaper.pdf](https://drive.google.com/file/d/1CAqg-8CR42J9DyBeSxPdxTZlhX6Omsok/view?usp=drive_link)
+**Full Technical Whitepaper:** [G1-316_Protocol_Whitepaper.gdoc](https://docs.google.com/document/d/1nOlEKhcHzD80LLgZSjgLWVbEyxBdprdWbVAfpu0cCUQ/edit?usp=sharing)
 
 **Key Sections:**
 
